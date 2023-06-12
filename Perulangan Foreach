@@ -1,0 +1,62 @@
+D.	Foreach
+Merupakan sebuah kontruksi alternatif yang lebih sederhana untuk perulangan for, 
+dimana konstruksi tersebut digunakan untuk melakukan looping (iterasi) pada setiap elemen 
+di dalam sebuah array (deret / matriks) atau koleksi data (collection).
+Sintaks nya adalah sebagai berikut.
+                          foreach ( tipe element in koleksi )
+                          {
+                                   statement ;
+                          }
+
+Contoh :
+
+
+using System;
+
+namespace Buku_CSharp
+{
+    class ulang_4
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Contoh Perulangan Foreach");
+            Console.WriteLine("^^^^^^^^^^^^^^^^^^^^^^^^^");
+            Console.WriteLine("");
+
+
+
+            int[] nilai = { 2, 50, 18, 235, 45, 36, 570 }; // mendeklarasikan dan menginisialisasi array
+            int jumlah;
+            double ratarata;
+
+            jumlah = 0;
+            
+            foreach (var elemen in nilai) // elemen dideklarasikan menggunakan tipe var
+            {
+                jumlah = jumlah + elemen;
+           }
+
+            ratarata = (double)jumlah / nilai.Length;
+
+            Console.WriteLine("DiketaHui : ");
+            Console.WriteLine("array nilai = { 2, 50, 18, 235, 45, 36, 570 }");
+            Console.WriteLine("");
+            Console.WriteLine("Output : ");
+            Console.WriteLine("Junmlah = " + jumlah);
+            Console.WriteLine("Rata-rata = " + ratarata);
+            
+            Console.ReadLine();
+        }
+    }
+}
+
+Output :
+Contoh Perulangan Foreach
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+DiketaHui :
+array nilai = { 2, 50, 18, 235, 45, 36, 570 }
+
+Output :
+Junmlah = 956
+Rata-rata = 136.571428571429
