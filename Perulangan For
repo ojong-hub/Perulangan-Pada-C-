@@ -1,0 +1,49 @@
+C.	Perulangan For
+Merupakan sebuah struktur perulangan yang digunakan untuk mengeksekusi sebuah bagian program secara 
+berulang dalam interval nilai tertentu. Sama halnya dengan While dan Do - While, eksekusi perulangan akan 
+berhenti jika kondisi bernilai false.
+
+Sedangkan sintaks perulangan for adalah seperti berikut.
+                      for ( nilai_awal; nilai_akhir; increment )
+                      {
+                      statement
+                      }
+
+Keterangan :
+•	nilai_awal : deklarasi variabel yang berfungsi sebagai nilai awal untuk iterasi. Misal : int x = 1;
+•	nilai_akhir :  berisi nilai akhir range, misalnya x < 10;.
+•	increment : merupakan penambahan nilai dari nnilai_awal, misalnya x++.
+
+Contoh :
+using System;
+
+namespace Buku_CSharp
+{
+    class ulang_3
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Contoh Perulangan For");
+            Console.WriteLine("^^^^^^^^^^^^^^^^^^^^^");
+            Console.WriteLine("");
+        
+            for (int a = 1; a < 6; a++)
+            {
+                Console.WriteLine("Pemrogaman C# - " + a.ToString());
+            }
+            Console.ReadLine();
+        }
+
+    }
+}
+
+Output :
+Contoh Perulangan For
+^^^^^^^^^^^^^^^^^^^^^
+
+Pemrogaman C# - 1
+Pemrogaman C# - 2
+Pemrogaman C# - 3
+Pemrogaman C# - 4
+Pemrogaman C# - 5
+
