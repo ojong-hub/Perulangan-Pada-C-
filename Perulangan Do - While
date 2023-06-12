@@ -1,0 +1,47 @@
+B.	Perulangan Do – While
+Adalah sebuah struktur perulangan yang merupakan kebalikan dari perulangan while, dimana kondisi akan 
+ditentukan terlebih dahulu dan di ikuti dengan jumlah iterasi.
+
+Sintaksnya adalah sebagai berikut.
+                  do
+                  {
+                    /*statement*/
+                  }
+                  while(kondisi)
+
+Contoh :
+
+
+using System;
+
+namespace Buku_CSharp
+{
+    class ulang_1
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Contoh Perulangan Do - While");
+            Console.WriteLine("^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+            Console.WriteLine("");
+
+            int y = 1;
+            do
+            {
+                Console.WriteLine("Baris ke - " + y.ToString());
+                y++;
+            }
+            while (y < 6);
+            Console.ReadLine();
+        }
+    }
+}
+
+Output :
+Contoh Perulangan Do - While
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Baris ke - 1
+Baris ke - 2
+Baris ke - 3
+Baris ke - 4
+Baris ke - 5
