@@ -1,0 +1,43 @@
+A.	While
+Merupakan sebuah konstruksi perulangan yang terjadi pada proses yang memungkinkan sebuah program 
+akan mengulang secara terus menerus selama suatu kondisi terpenuhi. Berikut adalah flowchart dari struktur while.
+
+Sintaks dari struktur while adalah sebagai berikut.
+                  while (kondisi) {
+                      [perintah]
+                      [iterasi]
+                  }
+Contoh :
+
+using System;
+
+namespace Buku_CSharp
+{
+    class ulang_1
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Contoh Perulangan While");
+            Console.WriteLine("^^^^^^^^^^^^^^^^^^^^^^^");
+            Console.WriteLine("");
+
+            int x = 1;
+            while (x <= 5)
+            {
+                Console.WriteLine("Iterasi ke -  " + x.ToString());
+                x++;
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
+Output :
+Contoh Perulangan While
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Iterasi ke -  1
+Iterasi ke -  2
+Iterasi ke -  3
+Iterasi ke -  4
+Iterasi ke -  5
